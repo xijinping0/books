@@ -1,15 +1,20 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
+  "index": {
+    "title": "目录",
     "type": "page"
   },
-  "contact": {
-    "title": "Contact ↗",
+  "lovers": {
+    "title": "习近平和他的情人们",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
-    "newWindow": true
+    "theme": {
+      "typesetting": "article"
+    }
+  },
+  "roulette": {
+    "title": "红色赌盘",
+    "type": "page",
+    "theme": {
+      "typesetting": "article"
+    }
   }
 }

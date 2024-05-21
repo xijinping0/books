@@ -1,23 +1,18 @@
-# Nextra Docs Template 
+# 天朝禁书
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+## 添加新书
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+| 文件 | 说明 |
+| --- | --- |
+| `pages/<book>` | 新书内容 |
+| `public/<book>` | 新书图片 |
+| `_meta.json` | 注册新书目录 |
+| `pages/index.md` | 添加新书链接 |
+| `theme.config.tsx` | 注册书名 |
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+## 本地开发
 
-## Quick Start
-
-Click the button to clone this repository and deploy it on Vercel:
-
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
-
-## Local Development
-
-First, run `pnpm i` to install the dependencies.
-
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
-
-## License
-
-This project is licensed under the MIT License.
+```sh
+yarn install
+yarn dev
+```
