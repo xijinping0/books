@@ -2,8 +2,8 @@
 
 ## 书目
 
-- [习近平和他的情人们](pages/lovers/toc.md)
-- [红色赌盘](pages/roulette/cover.mdx)
+- [习近平和他的情人们](pages/lovers/index.md)
+- [红色赌盘](pages/roulette/index.mdx)
 
 ## 添加新书
 
