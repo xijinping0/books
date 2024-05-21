@@ -16,5 +16,12 @@
     "theme": {
       "typesetting": "article"
     }
+  },
+  "tombstone": {
+    "title": "墓碑",
+    "type": "page",
+    "theme": {
+      "typesetting": "article"
+    }
   }
 }

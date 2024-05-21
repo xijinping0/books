@@ -20,6 +20,9 @@ const getBookName = (path: string): string | undefined => {
     case 'roulette': {
       return '红色赌盘';
     }
+    case 'tombstone': {
+      return '墓碑';
+    }
     default: {
       return undefined;
     }

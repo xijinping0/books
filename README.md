@@ -4,6 +4,7 @@
 
 - [习近平和他的情人们](pages/lovers/index.md)
 - [红色赌盘](pages/roulette/index.mdx)
+- [墓碑](pages/tombstone/index.md)
 
 ## 添加新书
 
