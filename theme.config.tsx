@@ -31,7 +31,7 @@ const config: DocsThemeConfig = {
   project: {
     link: 'https://github.com/xijinping0/books',
   },
-  docsRepositoryBase: 'https://github.com/xijinping0/books',
+  docsRepositoryBase: 'https://github.com/xijinping0/books/tree/main',
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
