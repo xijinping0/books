@@ -48,6 +48,10 @@ const config: DocsThemeConfig = {
   toc: {
     backToTop: true,
   },
+  search: {
+    error: '搜索失败，请重试',
+    placeholder: '搜索',
+  },
   editLink: {
     text: '在 GitHub 上编辑此页',
   },
