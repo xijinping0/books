@@ -42,7 +42,7 @@ const config: DocsThemeConfig = {
   useNextSeoProps() {
     const { asPath } = useRouter();
     return {
-      titleTemplate: ['%s', getBookName(asPath)].filter((s) => Boolean).join(' | ')
+      titleTemplate: ['%s', getBookName(asPath)].filter(Boolean).join(' | ')
     }
   },
   toc: {
