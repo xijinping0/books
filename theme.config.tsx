@@ -2,6 +2,8 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 import { useRouter } from "next/router";
 
+import { BOOK_NAMES } from "./utils";
+
 const shortFormatter = new Intl.DateTimeFormat('zh-CN', {
   year: 'numeric',
   month: 'short',
@@ -13,20 +15,7 @@ const getBookName = (path: string): string | undefined => {
   if (tokens.length < 0) {
     return undefined;
   }
-  switch (tokens[1]) {
-    case 'lovers': {
-      return '习近平和他的情人们';
-    }
-    case 'roulette': {
-      return '红色赌盘';
-    }
-    case 'tombstone': {
-      return '墓碑';
-    }
-    default: {
-      return undefined;
-    }
-  }
+  return BOOK_NAMES[tokens[1]];
 }
 
 const config: DocsThemeConfig = {
