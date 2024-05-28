@@ -3,8 +3,8 @@
     "title": "书目",
     "type": "page"
   },
-  "lovers": {
-    "title": "习近平和他的情人们",
+  "tombstone": {
+    "title": "墓碑",
     "type": "page",
     "theme": {
       "typesetting": "article"
@@ -17,8 +17,8 @@
       "typesetting": "article"
     }
   },
-  "tombstone": {
-    "title": "墓碑",
+  "lovers": {
+    "title": "习近平和他的情人们",
     "type": "page",
     "theme": {
       "typesetting": "article"
