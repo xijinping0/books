@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint-md": "yarn markdownlint --config .markdownlint.config.yaml pages/**/*.md pages/**/*.mdx"
+    "lint:md": "yarn markdownlint --config .markdownlint.config.yaml pages/**/*.md pages/**/*.mdx",
+    "lint:md:fix": "yarn lint:md -f"
   },
   "repository": {
     "type": "git",
