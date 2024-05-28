@@ -17,5 +17,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - run: yarn install
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'yarn'
+      - run: yarn install --frozen-lockfile
       - run: yarn lint:md
