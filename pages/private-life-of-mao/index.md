@@ -4,35 +4,103 @@
 
 ## 目录
 
-·插图
-·传奇传记·李志绥
-·前言
-·自序
-·致谢
-·序幕 毛泽东之死
-
-第一篇 (一九四九年～一九五七年)
-
-·1 ·2 ·3 ·4 ·5 ·6
-·7 ·8 ·9 ·10 ·11 ·12
-·13 ·14 ·15 ·16 ·17 ·18
-
-第二篇 (一九五七年～一九六五年)
-
-·19 ·20 ·21 ·22 ·23 ·24
-·25 ·26 ·27 ·28 ·29 ·30
-·31 ·32 ·33 ·34 ·35 ·36
-·37 ·38 ·39 ·40 ·41 ·42
-·43 ·44 ·45 ·46 ·47 ·48
-·49 ·50 ·51 ·52 ·53 ·54
-
-第三篇 (一九六五年～一九七六年)
-
-·55 ·56 ·57 ·58 ·59 ·60
-·61 ·62 ·63 ·64 ·65 ·66
-·67 ·68 ·69 ·70 ·71 ·72
-·73 ·74 ·75 ·76 ·77 ·78
-·79 ·80 ·81 ·82 ·83 ·84
-·85 ·86 ·87 ·88 ·89 ·90
-
-·终曲
+- 插图
+- 传奇传记 李志绥
+- [前言](/private-life-of-mao/foreword)
+- [自序](/private-life-of-mao/preface)
+- [致谢](/private-life-of-mao/acknowledgement)
+- [序幕 毛泽东之死](/private-life-of-mao/prelude)
+- 第一篇 (1949 年 ～ 1957 年)
+  - [1](/private-life-of-mao/1)
+  - [2](/private-life-of-mao/2)
+  - [3](/private-life-of-mao/3)
+  - [4](/private-life-of-mao/4)
+  - [5](/private-life-of-mao/5)
+  - [6](/private-life-of-mao/6)
+  - [7](/private-life-of-mao/7)
+  - [8](/private-life-of-mao/8)
+  - [9](/private-life-of-mao/9)
+  - [10](/private-life-of-mao/10)
+  - [11](/private-life-of-mao/11)
+  - [12](/private-life-of-mao/12)
+  - [13](/private-life-of-mao/13)
+  - [14](/private-life-of-mao/14)
+  - [15](/private-life-of-mao/15)
+  - [16](/private-life-of-mao/16)
+  - [17](/private-life-of-mao/17)
+  - [18](/private-life-of-mao/18)
+- 第二篇 (1957 年～ 1965 年)
+  - [19](/private-life-of-mao/19)
+  - [20](/private-life-of-mao/20)
+  - [21](/private-life-of-mao/21)
+  - [22](/private-life-of-mao/22)
+  - [23](/private-life-of-mao/23)
+  - [24](/private-life-of-mao/24)
+  - [25](/private-life-of-mao/25)
+  - [26](/private-life-of-mao/26)
+  - [27](/private-life-of-mao/27)
+  - [28](/private-life-of-mao/28)
+  - [29](/private-life-of-mao/29)
+  - [30](/private-life-of-mao/30)
+  - [31](/private-life-of-mao/31)
+  - [32](/private-life-of-mao/32)
+  - [33](/private-life-of-mao/33)
+  - [34](/private-life-of-mao/34)
+  - [35](/private-life-of-mao/35)
+  - [36](/private-life-of-mao/36)
+  - [37](/private-life-of-mao/37)
+  - [38](/private-life-of-mao/38)
+  - [39](/private-life-of-mao/39)
+  - [40](/private-life-of-mao/40)
+  - [41](/private-life-of-mao/41)
+  - [42](/private-life-of-mao/42)
+  - [43](/private-life-of-mao/43)
+  - [44](/private-life-of-mao/44)
+  - [45](/private-life-of-mao/45)
+  - [46](/private-life-of-mao/46)
+  - [47](/private-life-of-mao/47)
+  - [48](/private-life-of-mao/48)
+  - [49](/private-life-of-mao/49)
+  - [50](/private-life-of-mao/50)
+  - [51](/private-life-of-mao/51)
+  - [52](/private-life-of-mao/52)
+  - [53](/private-life-of-mao/53)
+  - [54](/private-life-of-mao/54)
+- 第三篇 (1965 年～ 1976 年)
+  - [55](/private-life-of-mao/55)
+  - [56](/private-life-of-mao/56)
+  - [57](/private-life-of-mao/57)
+  - [58](/private-life-of-mao/58)
+  - [59](/private-life-of-mao/59)
+  - [60](/private-life-of-mao/60)
+  - [61](/private-life-of-mao/61)
+  - [62](/private-life-of-mao/62)
+  - [63](/private-life-of-mao/63)
+  - [64](/private-life-of-mao/64)
+  - [65](/private-life-of-mao/65)
+  - [66](/private-life-of-mao/66)
+  - [67](/private-life-of-mao/67)
+  - [68](/private-life-of-mao/68)
+  - [69](/private-life-of-mao/69)
+  - [70](/private-life-of-mao/70)
+  - [71](/private-life-of-mao/71)
+  - [72](/private-life-of-mao/72)
+  - [73](/private-life-of-mao/73)
+  - [74](/private-life-of-mao/74)
+  - [75](/private-life-of-mao/75)
+  - [76](/private-life-of-mao/76)
+  - [77](/private-life-of-mao/77)
+  - [78](/private-life-of-mao/78)
+  - [79](/private-life-of-mao/79)
+  - [80](/private-life-of-mao/80)
+  - [81](/private-life-of-mao/81)
+  - [82](/private-life-of-mao/82)
+  - [83](/private-life-of-mao/83)
+  - [84](/private-life-of-mao/84)
+  - [85](/private-life-of-mao/85)
+  - [86](/private-life-of-mao/86)
+  - [87](/private-life-of-mao/87)
+  - [88](/private-life-of-mao/88)
+  - [89](/private-life-of-mao/89)
+  - [90](/private-life-of-mao/90)
+- [终曲](/private-life-of-mao/finale)
