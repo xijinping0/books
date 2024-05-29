@@ -2,10 +2,10 @@
 
 ## 书目
 
-- [墓碑](pages/tombstone/index.md)
-- [毛泽东私人医生回忆录](pages/private-life-of-mao/index.md)
-- [红色赌盘](pages/roulette/index.mdx)
-- [习近平和他的情人们](pages/lovers/index.md)
+- [墓碑](https://books.xijinping.one/tombstone)
+- [毛泽东私人医生回忆录](https://books.xijinping.one/private-life-of-mao)
+- [红色赌盘](https://books.xijinping.one/roulette)
+- [习近平和他的情人们](https://books.xijinping.one/lovers)
 
 ## 添加新书
 
