@@ -1,0 +1,20 @@
+{
+  "index": "目录",
+  "foreword": "前言",
+  "preface": "自序",
+  "acknowledgement": "致谢",
+  "prelude": "序幕 毛泽东之死",
+  "s01": {
+    "type": "separator",
+    "title": "第一篇 1949-1957"
+  },
+  "s02": {
+    "type": "separator",
+    "title": "第二篇 1957-1965"
+  },
+  "s03": {
+    "type": "separator",
+    "title": "第三篇 1965-1976"
+  },
+  "finale": "终曲"
+}
