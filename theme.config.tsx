@@ -19,7 +19,14 @@ const getBookName = (path: string): string | undefined => {
 }
 
 const config: DocsThemeConfig = {
-  logo: <span>天朝禁书</span>,
+  logo: (
+    <>
+      <img src="/book.svg" alt="logo" />
+      <span style={{ marginLeft: '.4em', fontWeight: 800 }}>
+        天朝禁书
+      </span>
+    </>
+  ),
   project: {
     link: 'https://github.com/xijinping0/books',
   },
@@ -29,6 +36,7 @@ const config: DocsThemeConfig = {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta property="og:title" content="天朝禁书" />
       <meta property="og:description" content="天朝禁书" />
+      <link rel="icon" href="/book.svg" type="image/svg+xml" />
     </>
   ),
   useNextSeoProps() {
