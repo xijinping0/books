@@ -1,0 +1,15 @@
+{
+  "index": "目录",
+  "s01": {
+    "type": "separator",
+    "title": "上编"
+  },
+  "s02": {
+    "type": "separator",
+    "title": "下编"
+  },
+  "articles": {
+    "type": "separator",
+    "title": "相关文章"
+  }
+}
