@@ -1,11 +1,34 @@
 {
   "index": {
     "title": "书目",
-    "type": "page"
+    "type": "menu",
+    "items": {
+      "tombstone": {
+        "title": "墓碑",
+        "href": "/tombstone"
+      },
+      "red-sun": {
+        "title": "红太阳是怎样升起的",
+        "href": "/red-sun"
+      },
+      "private-life-of-mao": {
+        "title": "毛泽东私人医生回忆录",
+        "href": "/private-life-of-mao"
+      },
+      "roulette": {
+        "title": "红色赌盘",
+        "href": "/roulette"
+      },
+      "lovers": {
+        "title": "习近平和他的情人们",
+        "href": "/lovers"
+      }
+    }
   },
   "tombstone": {
     "title": "墓碑",
     "type": "page",
+    "display": "hidden",
     "theme": {
       "typesetting": "article"
     }
@@ -13,6 +36,7 @@
   "red-sun": {
     "title": "红太阳是怎样升起的",
     "type": "page",
+    "display": "hidden",
     "theme": {
       "typesetting": "article"
     }
@@ -20,6 +44,7 @@
   "private-life-of-mao": {
     "title": "毛泽东私人医生回忆录",
     "type": "page",
+    "display": "hidden",
     "theme": {
       "typesetting": "article"
     }
@@ -27,6 +52,7 @@
   "roulette": {
     "title": "红色赌盘",
     "type": "page",
+    "display": "hidden",
     "theme": {
       "typesetting": "article"
     }
@@ -34,6 +60,7 @@
   "lovers": {
     "title": "习近平和他的情人们",
     "type": "page",
+    "display": "hidden",
     "theme": {
       "typesetting": "article"
     }

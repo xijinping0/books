@@ -48,6 +48,10 @@ const config: DocsThemeConfig = {
   toc: {
     backToTop: true,
   },
+  sidebar: {
+    autoCollapse: true,
+    defaultMenuCollapseLevel: 1,
+  },
   search: {
     error: '搜索失败，请重试',
     placeholder: '搜索',
