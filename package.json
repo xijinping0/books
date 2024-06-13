@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint:md": "yarn markdownlint --config .markdownlint.config.yaml pages/**/*.md pages/**/*.mdx",
     "lint:md:fix": "yarn lint:md -f"
@@ -23,6 +24,7 @@
     "@vercel/speed-insights": "^1.0.11",
     "next": "^14.2.3",
     "next-plausible": "^3.12.0",
+    "next-sitemap": "^4.2.3",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
     "react": "^18.2.0",
