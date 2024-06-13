@@ -2,12 +2,13 @@
   "index": "目录",
   "s01": {
     "type": "separator",
-    "title": "上编"
+    "title": "上编 延安整风运动的起源"
   },
   "s02": {
     "type": "separator",
-    "title": "下编"
+    "title": "下编 毛泽东与延安整风运动"
   },
+  "afterword": "后记",
   "articles": {
     "type": "separator",
     "title": "相关文章"
