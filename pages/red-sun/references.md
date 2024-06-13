@@ -1008,7 +1008,7 @@
 
 龚楚：《龚楚将军回忆录》（香港：明报月刊社，1978年）
 
-### 四 报纸、期刊
+## 四 报纸、期刊
 
 《二十一世纪》（香港：香港中文大学中国文化研究所）。
 
@@ -1048,7 +1048,7 @@
 
 《党史研究资料》（北京：中国革命博物馆党史研究室）
 
-### 五 英文论著
+## 五 英文论著
 
 1. **D. Dapter and Tony S. Ho:** *Revolutionary China: The 1949 Communist Revolution* (Cambridge, Mass.: Harvard University Press, 1994).
 
