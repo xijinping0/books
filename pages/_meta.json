@@ -15,6 +15,10 @@
         "title": "毛泽东私人医生回忆录",
         "href": "/private-life-of-mao"
       },
+      "last-years-of-zhou": {
+        "title": "晚年周恩来",
+        "href": "/last-years-of-zhou"
+      },
       "roulette": {
         "title": "红色赌盘",
         "href": "/roulette"
@@ -43,6 +47,14 @@
   },
   "private-life-of-mao": {
     "title": "毛泽东私人医生回忆录",
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
+  "last-years-of-zhou": {
+    "title": "晚年周恩来",
     "type": "page",
     "display": "hidden",
     "theme": {

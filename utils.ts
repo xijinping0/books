@@ -4,4 +4,5 @@ export const BOOK_NAMES: Record<string, string> = {
   'roulette': '红色赌盘',
   'tombstone': '墓碑',
   'private-life-of-mao': '毛泽东私人医生回忆录',
+  'last-years-of-zhou': '晚年周恩来',
 }
