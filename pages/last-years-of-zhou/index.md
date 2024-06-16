@@ -16,6 +16,8 @@
 
 ## 目录
 
+[引子](/last-years-of-zhou/prologue)
+
 [第一章 毛、周关系的历史回顾](/last-years-of-zhou/ch01)
 - 第一节 乞求毛高抬贵手
 - 第二节 不是冤家不聚头
@@ -89,3 +91,9 @@
 - 第二节 在密云不雨的日子里
 - 第三节 形势逆转
 - 第四节 油尽灯枯
+
+[尾声](/last-years-of-zhou/epilogue)
+
+[后记](/last-years-of-zhou/afterword)
+
+[附录《哭送母亲》](/last-years-of-zhou/appendix)
