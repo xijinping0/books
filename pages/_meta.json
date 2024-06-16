@@ -53,6 +53,14 @@
       "typesetting": "article"
     }
   },
+  "last-years-of-zhou": {
+    "title": "晚年周恩来",
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
   "roulette": {
     "title": "红色赌盘",
     "type": "page",
