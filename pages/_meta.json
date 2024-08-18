@@ -11,6 +11,10 @@
         "title": "红太阳是怎样升起的",
         "href": "/red-sun"
       },
+      "clouds-of-history": {
+        "title": "历史的云雾",
+        "href": "/clouds-of-history"
+      },
       "private-life-of-mao": {
         "title": "毛泽东私人医生回忆录",
         "href": "/private-life-of-mao"
@@ -35,6 +39,14 @@
   },
   "red-sun": {
     "title": "红太阳是怎样升起的",
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
+  "clouds-of-history": {
+    "title": "历史的云雾",
     "type": "page",
     "display": "hidden",
     "theme": {
