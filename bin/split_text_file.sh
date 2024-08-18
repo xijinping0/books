@@ -19,7 +19,7 @@ current_file=""
 file_count=0
 
 while IFS= read -r line; do
-  if [[ "$line" =~ ^第.{1,3}章.+$ ]]; then
+  if [[ "$line" =~ ^第.{1,3}[章|节].+$ ]]; then
     if [ -n "$current_file" ]; then
       echo -e "$buffer" > "$current_file"
     fi

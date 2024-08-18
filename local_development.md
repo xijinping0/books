@@ -13,6 +13,7 @@ yarn dev
 | --- | --- |
 | `README.md` | 添加新书链接 |
 | `pages/<book>/index.md{,x}` | 新书首页 |
+| `pages/<book>/_meta.json` | 新书边栏目录 |
 | `pages/<book>` | 新书内容 |
 | `public/<book>` | 新书图片 |
 | `_meta.json` | 注册新书目录 |
