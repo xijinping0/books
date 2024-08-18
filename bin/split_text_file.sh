@@ -19,13 +19,13 @@ current_file=""
 file_count=0
 
 while IFS= read -r line; do
-  if [[ "$line" =~ ^第.+章.+$ ]]; then
+  if [[ "$line" =~ ^第.{1,3}章.+$ ]]; then
     if [ -n "$current_file" ]; then
       echo -e "$buffer" > "$current_file"
     fi
     file_count=$((file_count + 1))
     current_file="${output_dir}/ch$(printf "%02d" $file_count).md"
-    buffer="$line"
+    buffer="# $line"
   else
     buffer="${buffer}\n${line}"
   fi
