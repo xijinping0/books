@@ -4,8 +4,7 @@
 
 ## 目录
 
-作者简介
-人物周刊：杨显惠揭开夹边沟事件真相
+- [作者简介](/jiabiangou/author)
 
 ### 上编 夹边沟记事
 
@@ -27,8 +26,7 @@
 - [探望王景超](/jiabiangou/s01/ch16)
 - [告别夹边沟](/jiabiangou/s01/ch17)
 - [写作手记(代跋)](/jiabiangou/s01/afterword)
-- [在哪里寻找思想的生长点？](/jiabiangou/s01/article01)
-- [《告别夹边沟》读](/jiabiangou/s01/article02)
+
 
 ### 下编 野马滩
 
@@ -41,3 +39,9 @@
 - [洗个不停](/jiabiangou/s02/ch05)
 - [野马滩](/jiabiangou/s02/ch06)
 - [后记](/jiabiangou/s02/afterword)
+
+### 相关文章
+
+- [人物周刊：杨显惠揭开夹边沟事件真相](/jiabiangou/articles/article01)
+- [在哪里寻找思想的生长点？](/jiabiangou/articles/article02)
+- [《告别夹边沟》读](/jiabiangou/articles/article03)
