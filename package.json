@@ -8,7 +8,9 @@
     "postbuild": "next-sitemap",
     "start": "next start",
     "lint:md": "yarn markdownlint --config .markdownlint.config.yaml pages/**/*.md pages/**/*.mdx",
-    "lint:md:fix": "yarn lint:md -f"
+    "lint:md:fix": "yarn lint:md -f",
+    "lint:cn": "autocorrect --lint --quiet --config .autocorrectrc .",
+    "lint:cn:fix": "autocorrect --fix --quiet --config .autocorrectrc ."
   },
   "repository": {
     "type": "git",
