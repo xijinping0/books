@@ -22,4 +22,4 @@ yarn dev
 
 注意
 - 新书首页文件 `index.md{,x}` 要放在 `pages/<book>` 目录下，这样首页也会显示侧边栏。如果放在 `pages` 目录下，则侧边栏不会显示。这一点 Nextra 文档并未提到。可以参考 Nextra 文档 [docs](https://github.com/shuding/nextra/blob/main/docs/pages/docs/index.mdx) 主页的实际设置。
-- 不要用纯数字作为章节文件的文件名（例如：`1.md`），否则 `_meta.json` 无法正确对章节进行排序，因为数字会被设别成 json object 成员序号。
+- 不要用纯数字作为章节文件的文件名（例如：`1.md`），否则 `_meta.json` 无法正确对章节进行排序，因为数字会被设别成 JSON object 成员序号。
