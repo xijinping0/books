@@ -23,3 +23,7 @@ jobs:
           cache: 'yarn'
       - run: yarn install --frozen-lockfile
       - run: yarn lint:md
+      - name: Run autocorrect
+        uses: huacnlee/autocorrect-action@v2
+        with:
+          use_npm: true
