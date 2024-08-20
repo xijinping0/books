@@ -11,5 +11,5 @@
 | [毛泽东和他的女人们](https://books.xijinping.one/mao-and-his-women) | 京夫子 | 毛泽东 |
 | [晚年周恩来](https://books.xijinping.one/last-years-of-zhou) | 高文谦 | 周恩来 |
 | [夹边沟记事](https://books.xijinping.one/jiabiangou) | 杨显惠 | |
-| [红色赌盘](https://books.xijinping.one/roulette) | 沈栋 | |
+| [红色赌盘](https://books.xijinping.one/roulette) | 沈栋 | 温家宝 |
 | [习近平和他的情人们](https://books.xijinping.one/lovers) | 常博洋 | 习近平 |
