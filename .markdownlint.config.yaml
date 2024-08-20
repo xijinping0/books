@@ -1,6 +1,6 @@
 default: true
 
-blanks-around-headers: false
+blanks-around-headings: false
 blanks-around-lists: false
 fenced-code-language: false
 line-length: false
