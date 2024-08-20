@@ -1,0 +1,13 @@
+{
+  "index": "目录",
+  "author": "作者简介",
+  "intro": "人物周刊：杨显惠揭开夹边沟事件真相",
+  "s01": {
+    "type": "separator",
+    "title": "上编 夹边沟记事"
+  },
+  "s02": {
+    "type": "separator",
+    "title": "下编 野马滩"
+  }
+}

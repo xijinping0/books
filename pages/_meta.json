@@ -27,6 +27,10 @@
         "title": "晚年周恩来",
         "href": "/last-years-of-zhou"
       },
+      "jiabiangou": {
+        "title": "夹边沟记事",
+        "href": "/jiabiangou"
+      },
       "roulette": {
         "title": "红色赌盘",
         "href": "/roulette"
@@ -79,6 +83,14 @@
   },
   "last-years-of-zhou": {
     "title": "晚年周恩来",
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
+  "jiabiangou": {
+    "title": "夹边沟记事",
     "type": "page",
     "display": "hidden",
     "theme": {
