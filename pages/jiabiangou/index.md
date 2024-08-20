@@ -25,7 +25,7 @@
 - [在列车上](/jiabiangou/s01/ch15)
 - [探望王景超](/jiabiangou/s01/ch16)
 - [告别夹边沟](/jiabiangou/s01/ch17)
-- [写作手记(代跋)](/jiabiangou/s01/afterword)
+- [写作手记 (代跋)](/jiabiangou/s01/afterword)
 
 ### 下编 野马滩
 

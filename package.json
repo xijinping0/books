@@ -8,7 +8,9 @@
     "postbuild": "next-sitemap",
     "start": "next start",
     "lint:md": "yarn markdownlint --config .markdownlint.config.yaml pages/**/*.md pages/**/*.mdx",
-    "lint:md:fix": "yarn lint:md -f"
+    "lint:md:fix": "yarn lint:md -f",
+    "lint:cn": "autocorrect --lint --quiet --config .autocorrectrc .",
+    "lint:cn:fix": "autocorrect --fix --quiet --config .autocorrectrc ."
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,7 @@
   },
   "devDependencies": {
     "@types/node": "20.12.12",
+    "autocorrect-node": "^2.11.1",
     "markdownlint-cli": "^0.41.0",
     "next-sitemap": "^4.2.3",
     "typescript": "^5.4.5"
