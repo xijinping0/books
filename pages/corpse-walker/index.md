@@ -33,33 +33,33 @@
 
 ### 卷二 民间访谈录
 
-1. [街头瞎子“张无名”](/corpse-walker/s03/03-01)
-2. [蜀派古琴大师王峪](/corpse-walker/s03/03-02)
-3. [打工仔赵二](/corpse-walker/s03/03-03)
-4. [嫖客唐东升](/corpse-walker/s03/03-04)
-5. [嫖客耿东风](/corpse-walker/s03/03-05)
-6. [三陪王小姐](/corpse-walker/s03/03-06)
-7. [三陪林小姐](/corpse-walker/s03/03-07)
-8. [吹鼓手兼嚎丧者李长庚](/corpse-walker/s03/03-08)
+1. [街头瞎子“张无名”](/corpse-walker/s02/02-01)
+2. [蜀派古琴大师王峪](/corpse-walker/s02/02-02)
+3. [打工仔赵二](/corpse-walker/s02/02-03)
+4. [嫖客唐东升](/corpse-walker/s02/02-04)
+5. [嫖客耿东风](/corpse-walker/s02/02-05)
+6. [三陪王小姐](/corpse-walker/s02/02-06)
+7. [三陪林小姐](/corpse-walker/s02/02-07)
+8. [吹鼓手兼嚎丧者李长庚](/corpse-walker/s02/02-08)
 9. 招魂术亲历者何老东（缺失）
-10. [川西神医张松](/corpse-walker/s03/03-10)
+10. [川西神医张松](/corpse-walker/s02/02-10)
 11. 神医信徒瞿曲（缺失）
 12. 算命先生孔庆天（缺失）
-13. [风水先生黄天元](/corpse-walker/s03/03-13)
-14. [遗体整容师张道陵](/corpse-walker/s03/03-14)
+13. [风水先生黄天元](/corpse-walker/s02/02-13)
+14. [遗体整容师张道陵](/corpse-walker/s02/02-14)
 15. 民间艺人任唤琴（缺失）
-16. [乞丐王](/corpse-walker/s03/03-16)
+16. [乞丐王](/corpse-walker/s02/02-16)
 17. 流浪儿（缺失）
 18. 乡村老教师黄志远（缺失）
-19. [村小老师许长久](/corpse-walker/s03/03-19)
-20. [老红卫兵刘卫东](/corpse-walker/s03/03-20)
-21. [厕所门卫周明贵](/corpse-walker/s03/03-21)
-22. [居委会主任米大喜](/corpse-walker/s03/03-22)
-23. [拆迁户罗月霞](/corpse-walker/s03/03-23)
-24. [朝圣者旺吉](/corpse-walker/s03/03-24)
-25. [下岗工人“营门口”](/corpse-walker/s03/03-25)
+19. [村小老师许长久](/corpse-walker/s02/02-19)
+20. [老红卫兵刘卫东](/corpse-walker/s02/02-20)
+21. [厕所门卫周明贵](/corpse-walker/s02/02-21)
+22. [居委会主任米大喜](/corpse-walker/s02/02-22)
+23. [拆迁户罗月霞](/corpse-walker/s02/02-23)
+24. [朝圣者旺吉](/corpse-walker/s02/02-24)
+25. [下岗工人“营门口”](/corpse-walker/s02/02-25)
 26. 游医赵百了（缺失）
-27. [新新人类喂小姐](/corpse-walker/s03/03-27)
+27. [新新人类喂小姐](/corpse-walker/s02/02-27)
 
 ### 卷三 文人访谈录
 
