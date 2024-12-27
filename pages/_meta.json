@@ -31,6 +31,10 @@
         "title": "夹边沟记事",
         "href": "/jiabiangou"
       },
+      "corpse-walker": {
+        "title": "中国底层访谈录",
+        "href": "/corpse-walker"
+      },
       "roulette": {
         "title": "红色赌盘",
         "href": "/roulette"
@@ -91,6 +95,14 @@
   },
   "jiabiangou": {
     "title": "夹边沟记事",
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
+  "corpse-walker": {
+    "title": "中国底层访谈录",
     "type": "page",
     "display": "hidden",
     "theme": {
