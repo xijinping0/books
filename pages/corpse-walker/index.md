@@ -90,11 +90,9 @@
 
 ### 相关文章
 
-- 流沙河序：哀民生之多艰
-- 李亚东：为无权者立命
-- 给老岳的一封信
-- 《中国底层访谈录》北京书评会纪要
-- 致四川省国家安全厅的请愿书
-- 禁书始末：沈励志
-- 非如此不可——关于《中国底层访谈录》的对话
-- 唐晓渡：致本书作者的一封信
+- [流沙河序：哀民生之多艰](/corpse-walker/articles/liushahe)
+- [李亚东：为无权者立命](/corpse-walker/articles/liyadong)
+- [《中国底层访谈录》北京书评会部分专家发言纪要](/corpse-walker/articles/book-review)
+- [沈励志：中共禁书始末](/corpse-walker/articles/shenlizhi)
+- [非如此不可——关于《中国底层访谈录》的对话](/corpse-walker/articles/luyuegang)
+- [唐晓渡：致本书作者的一封信](/corpse-walker/articles/tangxiaodu)
