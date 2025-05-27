@@ -39,5 +39,8 @@
     "next-sitemap": "^4.2.3",
     "prettier": "3.5.3",
     "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }
