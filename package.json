@@ -10,7 +10,9 @@
     "lint:md": "yarn markdownlint --config .markdownlint.config.yaml pages/**/*.md pages/**/*.mdx",
     "lint:md:fix": "yarn lint:md -f",
     "lint:cn": "autocorrect --lint --quiet --config .autocorrectrc .",
-    "lint:cn:fix": "autocorrect --fix --quiet --config .autocorrectrc ."
+    "lint:cn:fix": "autocorrect --fix --quiet --config .autocorrectrc .",
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write ."
   },
   "repository": {
     "type": "git",
