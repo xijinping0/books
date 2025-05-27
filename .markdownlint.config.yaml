@@ -12,3 +12,4 @@ no-emphasis-as-heading: false
 no-inline-html: false
 no-trailing-punctuation: false
 ol-prefix: false
+no-trailing-spaces: true
