@@ -14,6 +14,13 @@
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write ."
   },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,json,yaml}": "prettier:write",
+    "*.{md,mdx}": [
+      "yarn lint:md:fix",
+      "yarn lint:cn:fix"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xijinping0/books.git"
@@ -35,6 +42,7 @@
   "devDependencies": {
     "@types/node": "20.12.12",
     "autocorrect-node": "^2.11.1",
+    "lint-staged": "^16.1.0",
     "markdownlint-cli": "^0.41.0",
     "next-sitemap": "^4.2.3",
     "prettier": "3.5.3",
