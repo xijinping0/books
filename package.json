@@ -7,10 +7,19 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "lint:md": "yarn markdownlint --config .markdownlint.config.yaml pages/**/*.md pages/**/*.mdx",
+    "lint:md": "yarn markdownlint --config .markdownlint.config.yaml pages",
     "lint:md:fix": "yarn lint:md -f",
     "lint:cn": "autocorrect --lint --quiet --config .autocorrectrc .",
-    "lint:cn:fix": "autocorrect --fix --quiet --config .autocorrectrc ."
+    "lint:cn:fix": "autocorrect --fix --quiet --config .autocorrectrc .",
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write ."
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,json,yaml}": "prettier --write",
+    "*.{md,mdx}": [
+      "yarn markdownlint --config .markdownlint.config.yaml -f",
+      "autocorrect --fix --quiet --config .autocorrectrc"
+    ]
   },
   "repository": {
     "type": "git",
@@ -33,8 +42,13 @@
   "devDependencies": {
     "@types/node": "20.12.12",
     "autocorrect-node": "^2.11.1",
+    "lint-staged": "^16.1.0",
     "markdownlint-cli": "^0.41.0",
     "next-sitemap": "^4.2.3",
+    "prettier": "3.5.3",
     "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }

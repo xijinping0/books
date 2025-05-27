@@ -1,8 +1,8 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
-import { useRouter } from "next/router";
+import React from 'react';
+import { DocsThemeConfig } from 'nextra-theme-docs';
+import { useRouter } from 'next/router';
 
-import { BOOK_NAMES } from "./utils";
+import { BOOK_NAMES } from './utils';
 
 const shortFormatter = new Intl.DateTimeFormat('zh-CN', {
   year: 'numeric',
@@ -16,15 +16,13 @@ const getBookName = (path: string): string | undefined => {
     return undefined;
   }
   return BOOK_NAMES[tokens[1]];
-}
+};
 
 const config: DocsThemeConfig = {
   logo: (
     <>
       <img src="/book.svg" alt="logo" />
-      <span style={{ marginLeft: '.4em', fontWeight: 800 }}>
-        天朝禁书
-      </span>
+      <span style={{ marginLeft: '.4em', fontWeight: 800 }}>天朝禁书</span>
     </>
   ),
   project: {
@@ -46,8 +44,8 @@ const config: DocsThemeConfig = {
   useNextSeoProps() {
     const { asPath } = useRouter();
     return {
-      titleTemplate: ['%s', getBookName(asPath)].filter(Boolean).join(' | ')
-    }
+      titleTemplate: ['%s', getBookName(asPath)].filter(Boolean).join(' | '),
+    };
   },
   toc: {
     backToTop: true,
@@ -64,11 +62,7 @@ const config: DocsThemeConfig = {
     text: '在 GitHub 上编辑此页',
   },
   gitTimestamp({ timestamp }) {
-    return (
-      <div>
-        更新时间：{shortFormatter.format(new Date(timestamp))}
-      </div>
-    )
+    return <div>更新时间：{shortFormatter.format(new Date(timestamp))}</div>;
   },
   feedback: {
     content: null,
@@ -76,6 +70,6 @@ const config: DocsThemeConfig = {
   footer: {
     text: '天朝禁书',
   },
-}
+};
 
-export default config
+export default config;
