@@ -36,7 +36,11 @@ const config: DocsThemeConfig = {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta property="og:title" content="天朝禁书" />
       <meta property="og:description" content="天朝禁书" />
-      <link rel="icon" href="/book.svg" type="image/svg+xml" />
+      <link rel="icon" type="image/svg+xml" href="/book.svg" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+      <link rel="manifest" href="/site.webmanifest" />
     </>
   ),
   useNextSeoProps() {
