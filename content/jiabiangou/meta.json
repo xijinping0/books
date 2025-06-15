@@ -1,0 +1,6 @@
+{
+  "title": "夹边沟记事",
+  "description": "杨显惠",
+  "root": true,
+  "pages": ["index", "author", "s01", "s02", "notes", "afterword", "articles"]
+}

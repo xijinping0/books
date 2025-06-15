@@ -1,0 +1,6 @@
+{
+  "title": "红色赌盘",
+  "description": "沈栋 著",
+  "root": true,
+  "pages": ["index", "author", "...", "afterword", "photos", "acknowledgement"]
+}
