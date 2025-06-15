@@ -7,13 +7,14 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "lint:md": "yarn markdownlint --config .markdownlint.config.yaml pages",
+    "lint:md": "yarn markdownlint --config .markdownlint.config.yaml content",
     "lint:md:fix": "yarn lint:md -f",
-    "lint:cn": "autocorrect --lint --quiet --config .autocorrectrc .",
+    "lint:cn": "autocorrect --lint --config .autocorrectrc .",
     "lint:cn:fix": "autocorrect --fix --quiet --config .autocorrectrc .",
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write .",
-    "postinstall": "fumadocs-mdx"
+    "postinstall": "fumadocs-mdx",
+    "typecheck": "tsc --noEmit"
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx,json,yaml}": "prettier --write",
