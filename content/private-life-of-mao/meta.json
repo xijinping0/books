@@ -1,0 +1,16 @@
+{
+  "title": "毛泽东私人医生回忆录",
+  "description": "李志绥 著",
+  "root": true,
+  "pages": [
+    "index",
+    "foreword",
+    "preface",
+    "acknowledgement",
+    "prelude",
+    "s01",
+    "s02",
+    "s03",
+    "finale"
+  ]
+}

@@ -24,7 +24,10 @@ jobs:
           node-version: 22
           cache: yarn
       - run: yarn install --frozen-lockfile
-      - run: yarn lint:md
+      - run: yarn typecheck
+      - run: |
+          yarn lint:md
+          yarn lint:cn
       - name: Run autocorrect
         uses: huacnlee/autocorrect-action@v2
         with:

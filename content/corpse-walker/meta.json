@@ -1,0 +1,6 @@
+{
+  "title": "中国底层访谈录",
+  "description": "廖亦武 著",
+  "root": true,
+  "pages": ["index", "author", "preface", "s01", "s02", "s03", "articles"]
+}

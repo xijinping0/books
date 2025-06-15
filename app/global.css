@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+@import 'fumadocs-ui/css/vitepress.css';
+@import 'fumadocs-ui/css/preset.css';
+
+.prose p {
+  line-height: 2rem;
+  font-size: 17px;
+  /*color: rgb(51, 65, 85);*/
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  /*color: rgb(15, 23, 42);*/
+}
