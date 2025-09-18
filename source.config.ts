@@ -22,4 +22,5 @@ export default defineConfig({
   mdxOptions: {
     remarkPlugins: [[remarkAutoTypeTable, { generator }]],
   },
+  lastModifiedTime: 'git',
 });
