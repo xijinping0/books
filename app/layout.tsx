@@ -18,7 +18,6 @@ export default function Layout({ children }: { children: ReactNode }) {
             options: {
               delayMs: 1000,
               allowClear: true,
-              footer: 'Powered by Fumadocs',
             },
           }}
           i18n={{
