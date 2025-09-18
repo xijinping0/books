@@ -132,3 +132,8 @@ dist
 # General
 .DS_Store
 .idea
+
+# Generated content
+.contentlayer
+.content-collections
+.source

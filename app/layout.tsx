@@ -1,0 +1,36 @@
+import './global.css';
+import { RootProvider } from 'fumadocs-ui/provider';
+import { Inter } from 'next/font/google';
+import type { ReactNode } from 'react';
+
+const inter = Inter({
+  subsets: ['latin'],
+});
+
+export default function Layout({ children }: { children: ReactNode }) {
+  return (
+    <html lang="en" className={inter.className} suppressHydrationWarning>
+      <body className="flex flex-col min-h-screen">
+        <RootProvider
+          i18n={{
+            locale: 'cn',
+            translations: {
+              search: '搜索',
+              searchNoResult: '无结果',
+              toc: '目录',
+              tocNoHeadings: '无',
+              lastUpdate: '更新于',
+              chooseLanguage: '选择语言',
+              nextPage: '下一页',
+              previousPage: '上一页',
+              chooseTheme: '选择主题',
+              editOnGithub: '在 GitHub 上编辑',
+            },
+          }}
+        >
+          {children}
+        </RootProvider>
+      </body>
+    </html>
+  );
+}
