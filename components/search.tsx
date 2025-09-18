@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useDocsSearch } from 'fumadocs-core/search/client';
 import {
   SearchDialog,
@@ -19,31 +19,14 @@ import {
 
 export default function CustomSearchDialog(props: SharedProps) {
   const [tag, setTag] = useState<string | undefined>();
-  const [localSearch, setLocalSearch] = useState('');
-  const { setSearch, query } = useDocsSearch({
+  const { search, setSearch, query } = useDocsSearch({
     type: 'fetch',
+    delayMs: 1000,
     tag,
   });
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setSearch(localSearch);
-    }, 700);
-
-    return () => clearTimeout(timer);
-  }, [localSearch, setSearch]);
-
-  const handleSearchChange = useCallback((value: string) => {
-    setLocalSearch(value);
-  }, []);
-
   return (
-    <SearchDialog
-      search={localSearch}
-      onSearchChange={handleSearchChange}
-      isLoading={query.isLoading}
-      {...props}
-    >
+    <SearchDialog search={search} onSearchChange={setSearch} isLoading={query.isLoading} {...props}>
       <SearchDialogOverlay />
       <SearchDialogContent>
         <SearchDialogHeader>
@@ -53,7 +36,7 @@ export default function CustomSearchDialog(props: SharedProps) {
         </SearchDialogHeader>
         <SearchDialogList items={query.data !== 'empty' ? query.data : null} />
         <SearchDialogFooter className="flex flex-row">
-          <TagsList tag={tag} onTagChange={setTag}>
+          <TagsList tag={tag} onTagChange={setTag} allowClear>
             <TagsListItem value="tombstone">墓碑</TagsListItem>
             <TagsListItem value="red-sun">红太阳</TagsListItem>
           </TagsList>

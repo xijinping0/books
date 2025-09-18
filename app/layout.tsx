@@ -15,10 +15,6 @@ export default function Layout({ children }: { children: ReactNode }) {
         <RootProvider
           search={{
             SearchDialog: CustomSearchDialog,
-            options: {
-              delayMs: 1000,
-              allowClear: true,
-            },
           }}
           i18n={{
             locale: 'zh-CN',
