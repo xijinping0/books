@@ -3,7 +3,7 @@ import { DocsBody, DocsDescription, DocsPage, DocsTitle } from 'fumadocs-ui/page
 import { notFound } from 'next/navigation';
 import { createRelativeLink } from 'fumadocs-ui/mdx';
 import { getMDXComponents } from '@/mdx-components';
-import Link from 'next/link';
+import Link from 'fumadocs-core/link';
 import React from 'react';
 
 export default async function Page(props: { params: Promise<{ slug?: string[] }> }) {
@@ -26,6 +26,7 @@ export default async function Page(props: { params: Promise<{ slug?: string[] }>
             href={`https://github.com/xijinping0/books/blob/main/content/${page.path}`}
             rel="noreferrer noopener"
             className="text-sm text-fd-muted-foreground hover:text-fd-accent-foreground transition-colors [overflow-wrap:anywhere]"
+            external
             target="_blank"
           >
             在 GitHub 上编辑此页
