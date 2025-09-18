@@ -9,7 +9,9 @@ import React from 'react';
 export default async function Page(props: { params: Promise<{ slug?: string[] }> }) {
   const params = await props.params;
   const page = source.getPage(params.slug);
-  if (!page) notFound();
+  if (!page) {
+    return notFound();
+  }
 
   const MDXContent = page.data.body;
   const toc = page.data.toc?.length ? page.data.toc : undefined;
