@@ -40,6 +40,7 @@
     "@vercel/speed-insights": "^1.2.0",
     "fumadocs-core": "15.5.0",
     "fumadocs-mdx": "11.6.6",
+    "fumadocs-typescript": "^4.0.8",
     "fumadocs-ui": "15.5.0",
     "next": "15.3.3",
     "react": "^19.1.0",
