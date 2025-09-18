@@ -566,27 +566,22 @@
   resolved "https://registry.yarnpkg.com/@nolyfill/is-core-module/-/is-core-module-1.0.39.tgz#3dc35ba0f1e66b403c00b39344f870298ebb1c8e"
   integrity sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==
 
-"@orama/orama@3.1.7", "@orama/orama@^3.1.7":
-  version "3.1.7"
-  resolved "https://registry.yarnpkg.com/@orama/orama/-/orama-3.1.7.tgz#5fbe1238169ce560236b521425f477ec5f894591"
-  integrity sha512-6yB0117ZjsgNevZw3LP+bkrZa9mU/POPVaXgzMPOBbBc35w2P3R+1vMMhEfC06kYCpd5bf0jodBaTkYQW5TVeQ==
-
-"@orama/orama@^3.1.13":
+"@orama/orama@3.1.14", "@orama/orama@^3.1.13", "@orama/orama@^3.1.14":
   version "3.1.14"
   resolved "https://registry.yarnpkg.com/@orama/orama/-/orama-3.1.14.tgz#bb7c5737f2c3c6f6fd59f7f155eded398d153aae"
   integrity sha512-Iq4RxYC7y0pA/hLgcUGpYYs5Vze4qNmJk0Qi1uIrg2bHGpm6A06nbjWcH9h4HQsddkDFFlanLj/zYBH3Sxdb4w==
 
-"@orama/stopwords@^3.1.7":
-  version "3.1.7"
-  resolved "https://registry.yarnpkg.com/@orama/stopwords/-/stopwords-3.1.7.tgz#68fac286c2aaef0c24ff61b966719f75606298d4"
-  integrity sha512-i96UPZIS7s9WIIFSyUJLML3/+Y43f1iYLbGGu352mLwKZHX1qcXV47VrNCqjB6ePz3uHS1/sqV0dxaxN79ahYw==
+"@orama/stopwords@^3.1.14":
+  version "3.1.14"
+  resolved "https://registry.yarnpkg.com/@orama/stopwords/-/stopwords-3.1.14.tgz#aa48bc4b0b81ed061f4ffe9041f98386ef2d2ca5"
+  integrity sha512-IAuf/F4wZXHm/H7H85syOgVBlTtWMQpWz/GsyEtB0AVxsY8xdY2KoESf4aLhLR2mNSbTYQOzFPQW/9ii7m2Nbg==
 
-"@orama/tokenizers@^3.1.7":
-  version "3.1.7"
-  resolved "https://registry.yarnpkg.com/@orama/tokenizers/-/tokenizers-3.1.7.tgz#8e46101e9894c7de73a69bd8eaf4c8c76ec4fc1c"
-  integrity sha512-JtUI20XX1/wnXlsnAyb+ddw7yVNRYcZ/J9ft0RLzbZoIYz+UqWp7N1Xxwb5n5i3K2i3g2mVIpQaKBiSqjmx8LQ==
+"@orama/tokenizers@^3.1.14":
+  version "3.1.14"
+  resolved "https://registry.yarnpkg.com/@orama/tokenizers/-/tokenizers-3.1.14.tgz#c40ffd3a4df157f5bb2ecd9262c6b245e323c6b0"
+  integrity sha512-7dOQgXml5hEOqWubFB1kkpX9/nW/Cr1yRFQP5xCYpvi07yzQ+szbjx5mnEg0/QM3HQ/RpORDKyK7E9y2PIGIug==
   dependencies:
-    "@orama/orama" "3.1.7"
+    "@orama/orama" "3.1.14"
 
 "@pkgjs/parseargs@^0.11.0":
   version "0.11.0"
