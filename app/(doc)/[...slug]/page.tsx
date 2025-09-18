@@ -32,6 +32,11 @@ export default async function Page(props: { params: Promise<{ slug?: string[] }>
       }}
       full={page.data.full}
       lastUpdate={page.data.lastModified}
+      breadcrumb={{
+        enabled: true,
+        includeRoot: true,
+        includePage: true,
+      }}
     >
       <DocsTitle>{page.data.title}</DocsTitle>
       <DocsDescription>{page.data.description}</DocsDescription>
