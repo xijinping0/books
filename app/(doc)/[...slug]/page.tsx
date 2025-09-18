@@ -3,8 +3,6 @@ import { DocsBody, DocsDescription, DocsPage, DocsTitle } from 'fumadocs-ui/page
 import { notFound } from 'next/navigation';
 import { createRelativeLink } from 'fumadocs-ui/mdx';
 import { getMDXComponents } from '@/mdx-components';
-import { EditorLink } from 'next/dist/client/components/react-dev-overlay/ui/components/terminal/editor-link';
-import { DocsLinkButton } from 'next/dist/client/components/react-dev-overlay/ui/components/errors/error-overlay-toolbar/docs-link-button';
 import Link from 'next/link';
 import React from 'react';
 
@@ -14,10 +12,11 @@ export default async function Page(props: { params: Promise<{ slug?: string[] }>
   if (!page) notFound();
 
   const MDXContent = page.data.body;
+  const toc = page.data.toc?.length ? page.data.toc : undefined;
 
   return (
     <DocsPage
-      toc={page.data.toc}
+      toc={toc}
       tableOfContent={{
         style: 'clerk',
         footer: (
