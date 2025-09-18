@@ -1,5 +1,4 @@
 import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
-
 /**
  * Shared layout configurations
  *
@@ -12,5 +11,6 @@ export const baseOptions: BaseLayoutProps = {
     title: '天朝禁书',
   },
   // see https://fumadocs.dev/docs/ui/navigation/links
-  // links: [],
+  githubUrl: 'https://github.com/xijinping0/books',
+  links: [],
 };

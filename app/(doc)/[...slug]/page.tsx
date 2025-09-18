@@ -1,8 +1,12 @@
 import { source } from '@/lib/source';
-import { DocsPage, DocsBody, DocsDescription, DocsTitle } from 'fumadocs-ui/page';
+import { DocsBody, DocsDescription, DocsPage, DocsTitle } from 'fumadocs-ui/page';
 import { notFound } from 'next/navigation';
 import { createRelativeLink } from 'fumadocs-ui/mdx';
 import { getMDXComponents } from '@/mdx-components';
+import { EditorLink } from 'next/dist/client/components/react-dev-overlay/ui/components/terminal/editor-link';
+import { DocsLinkButton } from 'next/dist/client/components/react-dev-overlay/ui/components/errors/error-overlay-toolbar/docs-link-button';
+import Link from 'next/link';
+import React from 'react';
 
 export default async function Page(props: { params: Promise<{ slug?: string[] }> }) {
   const params = await props.params;
@@ -12,7 +16,23 @@ export default async function Page(props: { params: Promise<{ slug?: string[] }>
   const MDXContent = page.data.body;
 
   return (
-    <DocsPage toc={page.data.toc} full={page.data.full}>
+    <DocsPage
+      toc={page.data.toc}
+      tableOfContent={{
+        style: 'clerk',
+        footer: (
+          <Link
+            href={`https://github.com/xijinping0/books/blob/main/content/${page.path}`}
+            rel="noreferrer noopener"
+            className="text-sm text-fd-muted-foreground hover:text-fd-accent-foreground transition-colors [overflow-wrap:anywhere]"
+            target="_blank"
+          >
+            在 GitHub 上编辑此页
+          </Link>
+        ),
+      }}
+      full={page.data.full}
+    >
       <DocsTitle>{page.data.title}</DocsTitle>
       <DocsDescription>{page.data.description}</DocsDescription>
       <DocsBody>
