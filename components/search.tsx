@@ -19,10 +19,16 @@ import { Popover, PopoverContent, PopoverTrigger } from 'fumadocs-ui/components/
 import { buttonVariants } from 'fumadocs-ui/components/ui/button';
 import { BOOK_NAMES } from '@/lib/constants';
 import { cn } from '@/lib/cn';
+import { IconChevronDown, IconX } from '@tabler/icons-react';
 
 const getCurrentTag = (pathname: string) => {
   return pathname.split('/')?.[1];
 };
+
+const BOOK_ENTRIES_WITH_ALL = [
+  [undefined, '全部书籍'],
+  ...Object.entries(BOOK_NAMES).map(([slug, name]) => [slug, `《${name}》`]),
+];
 
 export default function CustomSearchDialog(props: SharedProps) {
   const pathname = usePathname();
@@ -38,7 +44,7 @@ export default function CustomSearchDialog(props: SharedProps) {
     setTag(getCurrentTag(pathname));
   }, [pathname]);
 
-  const bookToSearch = Object.entries(BOOK_NAMES).find(([slug]) => slug === tag)?.[1];
+  const bookToSearch = BOOK_ENTRIES_WITH_ALL.find(([slug]) => slug === tag)?.[1] ?? '全部书籍';
 
   return (
     <SearchDialog search={search} onSearchChange={setSearch} isLoading={query.isLoading} {...props}>
@@ -56,22 +62,22 @@ export default function CustomSearchDialog(props: SharedProps) {
               className={buttonVariants({
                 size: 'sm',
                 color: 'ghost',
-                className: '-m-1.5 me-auto',
+                className: '-m-1.5',
               })}
             >
               <span className="text-fd-muted-foreground/80 me-2">搜索范围：</span>
-              {bookToSearch != null ? `《${bookToSearch}》` : '全部书籍'}
-              {/*<ChevronDown className="size-3.5 text-fd-muted-foreground" />*/}
+              {bookToSearch}
+              <IconChevronDown className="size-3.5 text-fd-muted-foreground" />
             </PopoverTrigger>
             <PopoverContent className="flex flex-col p-1 gap-1" align="start">
-              {Object.entries(BOOK_NAMES).map(([slug, name], i) => {
+              {BOOK_ENTRIES_WITH_ALL.map(([slug, name], i) => {
                 const isSelected = slug === tag;
 
                 return (
                   <button
                     key={i}
                     onClick={() => {
-                      setTag(slug);
+                      setTag(slug == null ? undefined : slug);
                       setOpen(false);
                     }}
                     className={cn(
@@ -88,13 +94,22 @@ export default function CustomSearchDialog(props: SharedProps) {
               })}
             </PopoverContent>
           </Popover>
-          <a
-            href="https://orama.com"
-            rel="noreferrer noopener"
-            className="text-xs text-nowrap text-fd-muted-foreground"
-          >
-            Powered by Orama
-          </a>
+          {tag != null && (
+            <button
+              onClick={() => {
+                setTag(undefined);
+                setOpen(false);
+              }}
+              className={buttonVariants({
+                size: 'sm',
+                color: 'ghost',
+                className: '-my-1.5',
+              })}
+            >
+              清除搜索范围
+              <IconX className="size-3.5 text-fd-muted-foreground" />
+            </button>
+          )}
         </SearchDialogFooter>
       </SearchDialogContent>
     </SearchDialog>
