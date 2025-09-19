@@ -15,4 +15,17 @@ export const { GET } = createFromSource(source, {
     exact: true,
     limit: 10,
   },
+  buildIndex: (page: any) => {
+    const pagePaths = page.data._file?.path?.split('/') ?? [];
+    const tag = pagePaths?.[0];
+
+    return {
+      title: page.data.title,
+      description: page.data.description,
+      url: page.url,
+      id: page.url,
+      structuredData: page.data.structuredData,
+      tag,
+    };
+  },
 });
