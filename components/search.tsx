@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import { useDocsSearch } from 'fumadocs-core/search/client';
 import {
   SearchDialog,
@@ -17,13 +18,22 @@ import {
   TagsListItem,
 } from 'fumadocs-ui/components/dialog/search';
 
+const getCurrentTag = (pathname: string) => {
+  return pathname.split('/')?.[1];
+};
+
 export default function CustomSearchDialog(props: SharedProps) {
-  const [tag, setTag] = useState<string | undefined>();
+  const pathname = usePathname();
+  const [tag, setTag] = useState<string | undefined>(getCurrentTag(pathname));
   const { search, setSearch, query } = useDocsSearch({
     type: 'fetch',
     delayMs: 1000,
     tag,
   });
+
+  useEffect(() => {
+    setTag(getCurrentTag(pathname));
+  }, [pathname]);
 
   return (
     <SearchDialog search={search} onSearchChange={setSearch} isLoading={query.isLoading} {...props}>
