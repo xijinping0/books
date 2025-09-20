@@ -4,7 +4,7 @@
   "version": "2.0.0",
   "scripts": {
     "dev": "next dev --turbo",
-    "build": "next build",
+    "build": "next build && npx tsx scripts/sync-content.ts",
     "postbuild": "next-sitemap",
     "start": "next start",
     "lint:md": "yarn markdownlint --config .markdownlint.config.yaml content",

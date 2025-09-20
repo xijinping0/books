@@ -1,10 +1,6 @@
 name: Index
 
 on:
-  push:
-    branches: ['main']
-    paths:
-      - 'content/**'
   workflow_dispatch:
 
 concurrency:
