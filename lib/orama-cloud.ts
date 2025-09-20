@@ -90,9 +90,12 @@ export async function sync(cloudManager: CloudManager, options: SyncOptions): Pr
   const { autoDeploy = true } = options;
   const index = cloudManager.index(options.index);
 
-  for (const document of options.documents) {
+  const tasks = options.documents.map(async (document) => {
+    console.info(`Syncing document ${document.id}`);
     await index.update(toIndex(document));
-  }
+  });
+  await Promise.all(tasks);
+
   if (autoDeploy) {
     await index.deploy();
   }
