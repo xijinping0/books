@@ -18,6 +18,13 @@ export interface SyncOptions {
    * @defaultValue true
    */
   autoDeploy?: boolean;
+
+  /**
+   * Number of documents to send in each batch
+   *
+   * @defaultValue 100
+   */
+  batchSize?: number;
 }
 
 export type I18nSyncOptions = Omit<SyncOptions, 'index' | 'documents'> & {
@@ -87,14 +94,17 @@ export interface OramaIndex {
 }
 
 export async function sync(cloudManager: CloudManager, options: SyncOptions): Promise<void> {
-  const { autoDeploy = true } = options;
+  const { autoDeploy = true, batchSize = 100 } = options;
   const index = cloudManager.index(options.index);
+  const items = options.documents.flatMap(toIndex);
 
-  const tasks = options.documents.map(async (document) => {
-    console.info(`Syncing document ${document.id}`);
-    await index.update(toIndex(document));
-  });
-  await Promise.all(tasks);
+  await index.empty();
+
+  for (let i = 0; i < items.length; i += batchSize) {
+    const batch = items.slice(i, i + batchSize);
+    console.info(`Inserting batch ${i} - ${i + batch.length} / ${items.length}`);
+    await index.insert(batch);
+  }
 
   if (autoDeploy) {
     await index.deploy();
@@ -105,12 +115,22 @@ export async function syncI18n(
   cloudManager: CloudManager,
   options: I18nSyncOptions,
 ): Promise<void> {
-  const { autoDeploy = true } = options;
+  const { autoDeploy = true, batchSize = 100 } = options;
 
   const tasks = options.documents.map(async (document) => {
     const index = cloudManager.index(options.indexes[document.locale]);
+    const items = document.items.flatMap(toIndex);
 
-    await index.snapshot(document.items.flatMap(toIndex));
+    await index.empty();
+
+    for (let i = 0; i < items.length; i += batchSize) {
+      const batch = items.slice(i, i + batchSize);
+      console.info(
+        `[${document.locale}] Inserting batch ${i} - ${i + batch.length} / ${items.length}`,
+      );
+      await index.insert(batch);
+    }
+
     if (autoDeploy) {
       await index.deploy();
     }
