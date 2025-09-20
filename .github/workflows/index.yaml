@@ -1,0 +1,35 @@
+name: Index
+
+on:
+  push:
+    branches: ['main']
+    path:
+      - 'content/**'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  update-index:
+    name: Update Index
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: yarn
+      - run: yarn install --frozen-lockfile
+      - name: Update index
+        run: |
+          yarn build
+          npx tsx scripts/sync-content.ts
+        env:
+          ORAMA_PRIVATE_INDEX: ${{ secrets.ORAMA_PRIVATE_INDEX }}
+          ORAMA_PRIVATE_API_KEY: ${{ secrets.ORAMA_PRIVATE_API_KEY }}

@@ -20,6 +20,14 @@ yarn dev
 | `public/<book>` | 新书图片 |
 | `meta.json` | 注册新书目录 |
 
+## 手动更新 Orama 索引
+
+```bash
+export ORAMA_PRIVATE_API_KEY=<private-api-key>
+export ORAMA_PRIVATE_INDEX=<private-index>
+yarn build
+```
+
 <details>
 
 ## Nextra 添加新书
