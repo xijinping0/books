@@ -5,6 +5,9 @@ import { createRelativeLink } from 'fumadocs-ui/mdx';
 import { getMDXComponents } from '@/mdx-components';
 import Link from 'fumadocs-core/link';
 import React from 'react';
+import { Metadata } from 'next';
+import { BOOK_NAMES } from '@/lib/constants';
+import { AbsoluteString } from 'next/dist/lib/metadata/types/metadata-types';
 
 export default async function Page(props: { params: Promise<{ slug?: string[] }> }) {
   const params = await props.params;
@@ -56,16 +59,32 @@ export default async function Page(props: { params: Promise<{ slug?: string[] }>
 }
 
 export async function generateStaticParams() {
-  return source.generateParams();
+  return source.generateParams().filter((param) => {
+    // Filter out the index page (empty slug or root path)
+    return param.slug && param.slug.length > 0;
+  });
 }
 
-export async function generateMetadata(props: { params: Promise<{ slug?: string[] }> }) {
+export async function generateMetadata(props: {
+  params: Promise<{ slug?: string[] }>;
+}): Promise<Metadata> {
   const params = await props.params;
+  if (!params.slug || params.slug.length === 0) {
+    return {};
+  }
+
   const page = source.getPage(params.slug);
-  if (!page) notFound();
+  if (!page) {
+    return {};
+  }
+
+  const bookName = BOOK_NAMES[page.slugs?.[0]];
+  const chapterName = page.data.title;
+  const title: string | AbsoluteString =
+    bookName === chapterName ? bookName : { absolute: `${chapterName} | ${bookName}` };
 
   return {
-    title: page.data.title,
+    title,
     description: page.data.description,
   };
 }

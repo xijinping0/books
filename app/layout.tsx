@@ -3,14 +3,23 @@ import { RootProvider } from 'fumadocs-ui/provider';
 import { Inter } from 'next/font/google';
 import type { ReactNode } from 'react';
 import CustomSearchDialog from '@/components/search';
+import { Metadata } from 'next';
 
 const inter = Inter({
   subsets: ['latin'],
 });
 
+export const metadata: Metadata = {
+  title: {
+    template: '%s | 天朝禁书',
+    default: '天朝禁书',
+  },
+  description: '天朝禁书',
+};
+
 export default function Layout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={inter.className} suppressHydrationWarning>
+    <html lang="zh-CN" className={inter.className} suppressHydrationWarning>
       <body className="flex flex-col min-h-screen">
         <RootProvider
           search={{
