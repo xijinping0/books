@@ -90,8 +90,12 @@ export async function sync(cloudManager: CloudManager, options: SyncOptions): Pr
   const { autoDeploy = true } = options;
   const index = cloudManager.index(options.index);
 
-  await index.snapshot(options.documents.flatMap(toIndex));
-  if (autoDeploy) await index.deploy();
+  for (const document of options.documents) {
+    await index.update(toIndex(document));
+  }
+  if (autoDeploy) {
+    await index.deploy();
+  }
 }
 
 export async function syncI18n(
@@ -104,7 +108,9 @@ export async function syncI18n(
     const index = cloudManager.index(options.indexes[document.locale]);
 
     await index.snapshot(document.items.flatMap(toIndex));
-    if (autoDeploy) await index.deploy();
+    if (autoDeploy) {
+      await index.deploy();
+    }
   });
 
   await Promise.all(tasks);
