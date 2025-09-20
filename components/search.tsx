@@ -46,7 +46,7 @@ export default function CustomSearchDialog(props: SharedProps) {
   const [tag, setTag] = useState<string | undefined>(getCurrentTag(pathname));
   const { search, setSearch, query } = useDocsSearch({
     type: 'orama-cloud',
-    index: 'crawler',
+    index: 'default',
     client,
     delayMs: 1000,
     tag,
