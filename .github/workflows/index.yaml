@@ -18,6 +18,11 @@ jobs:
   update-index:
     name: Update Index
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_ORAMA_ENDPOINT: ${{ secrets.NEXT_PUBLIC_ORAMA_ENDPOINT }}
+      NEXT_PUBLIC_ORAMA_API_KEY: ${{ secrets.NEXT_PUBLIC_ORAMA_API_KEY }}
+      ORAMA_PRIVATE_INDEX: ${{ secrets.ORAMA_PRIVATE_INDEX }}
+      ORAMA_PRIVATE_API_KEY: ${{ secrets.ORAMA_PRIVATE_API_KEY }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -30,8 +35,3 @@ jobs:
         run: yarn build
       - name: Update index
         run: npx tsx scripts/sync-content.ts
-        env:
-          NEXT_PUBLIC_ORAMA_ENDPOINT: ${{ secrets.NEXT_PUBLIC_ORAMA_ENDPOINT }}
-          NEXT_PUBLIC_ORAMA_API_KEY: ${{ secrets.NEXT_PUBLIC_ORAMA_API_KEY }}
-          ORAMA_PRIVATE_INDEX: ${{ secrets.ORAMA_PRIVATE_INDEX }}
-          ORAMA_PRIVATE_API_KEY: ${{ secrets.ORAMA_PRIVATE_API_KEY }}
