@@ -20,6 +20,7 @@ import { buttonVariants } from 'fumadocs-ui/components/ui/button';
 import { BOOK_NAMES } from '@/lib/constants';
 import { cn } from '@/lib/cn';
 import { IconChevronDown, IconX } from '@tabler/icons-react';
+import { OramaClient } from '@oramacloud/client';
 
 const getCurrentTag = (pathname: string) => {
   return pathname.split('/')?.[1];
@@ -30,12 +31,19 @@ const BOOK_ENTRIES_WITH_ALL = [
   ...Object.entries(BOOK_NAMES).map(([slug, name]) => [slug, `《${name}》`]),
 ];
 
+const client = new OramaClient({
+  endpoint: process.env.NEXT_PUBLIC_ORAMA_ENDPOINT!,
+  api_key: process.env.NEXT_PUBLIC_ORAMA_API_KEY!,
+});
+
 export default function CustomSearchDialog(props: SharedProps) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [tag, setTag] = useState<string | undefined>(getCurrentTag(pathname));
   const { search, setSearch, query } = useDocsSearch({
-    type: 'fetch',
+    type: 'orama-cloud',
+    index: 'crawler',
+    client,
     delayMs: 1000,
     tag,
   });
