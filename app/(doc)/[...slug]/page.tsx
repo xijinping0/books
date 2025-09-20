@@ -59,13 +59,20 @@ export default async function Page(props: { params: Promise<{ slug?: string[] }>
 }
 
 export async function generateStaticParams() {
-  return source.generateParams();
+  return source.generateParams().filter((param) => {
+    // Filter out the index page (empty slug or root path)
+    return param.slug && param.slug.length > 0;
+  });
 }
 
 export async function generateMetadata(props: {
   params: Promise<{ slug?: string[] }>;
 }): Promise<Metadata> {
   const params = await props.params;
+  if (!params.slug || params.slug.length === 0) {
+    return {};
+  }
+
   const page = source.getPage(params.slug);
   if (!page) {
     return {};
