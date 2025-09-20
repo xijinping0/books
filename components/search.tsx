@@ -22,8 +22,12 @@ import { cn } from '@/lib/cn';
 import { IconChevronDown, IconX } from '@tabler/icons-react';
 import { OramaClient } from '@oramacloud/client';
 
-const getCurrentTag = (pathname: string) => {
-  return pathname.split('/')?.[1];
+const getCurrentTag = (pathname: string): string | undefined => {
+  const tag = pathname.split('/')?.[1];
+  if (tag != null && Object.keys(BOOK_NAMES).includes(tag)) {
+    return tag;
+  }
+  return undefined;
 };
 
 const BOOK_ENTRIES_WITH_ALL = [
