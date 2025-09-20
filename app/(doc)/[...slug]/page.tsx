@@ -6,6 +6,8 @@ import { getMDXComponents } from '@/mdx-components';
 import Link from 'fumadocs-core/link';
 import React from 'react';
 import { Metadata } from 'next';
+import { BOOK_NAMES } from '@/lib/constants';
+import { AbsoluteString } from 'next/dist/lib/metadata/types/metadata-types';
 
 export default async function Page(props: { params: Promise<{ slug?: string[] }> }) {
   const params = await props.params;
@@ -69,8 +71,13 @@ export async function generateMetadata(props: {
     return {};
   }
 
+  const bookName = BOOK_NAMES[page.slugs?.[0]];
+  const chapterName = page.data.title;
+  const title: string | AbsoluteString =
+    bookName === chapterName ? bookName : { absolute: `${chapterName} | ${bookName}` };
+
   return {
-    title: page.data.title,
+    title,
     description: page.data.description,
   };
 }
