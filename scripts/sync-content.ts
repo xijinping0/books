@@ -11,6 +11,11 @@ const filePath = {
 }['next'];
 
 async function main() {
+  if (process.env.VERCEL_ENV !== 'production') {
+    console.log('Skipping index sync - not in production environment');
+    return;
+  }
+
   const apiKey = process.env.ORAMA_PRIVATE_API_KEY;
   if (apiKey == null) {
     console.warn('No api key for Orama found, skipping');
