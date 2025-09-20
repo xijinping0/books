@@ -3,6 +3,8 @@ import { createFromSource } from 'fumadocs-core/search/server';
 import { createTokenizer } from '@orama/tokenizers/mandarin';
 import { stopwords } from '@orama/stopwords/mandarin';
 
+export const revalidate = 0;
+
 export const { GET } = createFromSource(source, {
   components: {
     tokenizer: createTokenizer({
