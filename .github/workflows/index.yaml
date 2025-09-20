@@ -26,10 +26,12 @@ jobs:
           node-version: 22
           cache: yarn
       - run: yarn install --frozen-lockfile
+      - name: Build app
+        run: yarn build
       - name: Update index
-        run: |
-          yarn build
-          npx tsx scripts/sync-content.ts
+        run: npx tsx scripts/sync-content.ts
         env:
+          NEXT_PUBLIC_ORAMA_ENDPOINT: ${{ secrets.NEXT_PUBLIC_ORAMA_ENDPOINT }}
+          NEXT_PUBLIC_ORAMA_API_KEY: ${{ secrets.NEXT_PUBLIC_ORAMA_API_KEY }}
           ORAMA_PRIVATE_INDEX: ${{ secrets.ORAMA_PRIVATE_INDEX }}
           ORAMA_PRIVATE_API_KEY: ${{ secrets.ORAMA_PRIVATE_API_KEY }}
