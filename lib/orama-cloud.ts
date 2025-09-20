@@ -22,7 +22,7 @@ export interface SyncOptions {
   /**
    * Number of documents to send in each batch
    *
-   * @defaultValue 100
+   * @defaultValue 1000
    */
   batchSize?: number;
 }
@@ -94,7 +94,7 @@ export interface OramaIndex {
 }
 
 export async function sync(cloudManager: CloudManager, options: SyncOptions): Promise<void> {
-  const { autoDeploy = true, batchSize = 100 } = options;
+  const { autoDeploy = true, batchSize = 1000 } = options;
   const index = cloudManager.index(options.index);
   const items = options.documents.flatMap(toIndex);
 
@@ -115,7 +115,7 @@ export async function syncI18n(
   cloudManager: CloudManager,
   options: I18nSyncOptions,
 ): Promise<void> {
-  const { autoDeploy = true, batchSize = 100 } = options;
+  const { autoDeploy = true, batchSize = 1000 } = options;
 
   const tasks = options.documents.map(async (document) => {
     const index = cloudManager.index(options.indexes[document.locale]);
