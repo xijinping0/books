@@ -1,4 +1,4 @@
-import { sync, type OramaDocument } from 'fumadocs-core/search/orama-cloud';
+import { sync, type OramaDocument } from '@/lib/orama-cloud';
 import * as fs from 'node:fs/promises';
 import { CloudManager } from '@oramacloud/client';
 
@@ -12,9 +12,13 @@ const filePath = {
 
 async function main() {
   const apiKey = process.env.ORAMA_PRIVATE_API_KEY;
-
   if (apiKey == null) {
     console.warn('No api key for Orama found, skipping');
+    return;
+  }
+  const index = process.env.ORAMA_PRIVATE_INDEX;
+  if (index == null) {
+    console.warn('No index for Orama found, skipping');
     return;
   }
 
@@ -23,7 +27,7 @@ async function main() {
   const manager = new CloudManager({ api_key: apiKey });
 
   await sync(manager, {
-    index: process.env.ORAMA_PRIVATE_INDEX!,
+    index,
     documents: records,
   });
 
