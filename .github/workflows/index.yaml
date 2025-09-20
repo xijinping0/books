@@ -3,7 +3,7 @@ name: Index
 on:
   push:
     branches: ['main']
-    path:
+    paths:
       - 'content/**'
   workflow_dispatch:
 
