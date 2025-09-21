@@ -17,20 +17,28 @@ const CommentBlock = ({ page }: CommentBlockProps) => {
   }
 
   return (
-    <ReactCusdis
-      lang="zh-cn"
-      attrs={{
-        host,
-        appId,
-        pageId: page.url,
-        pageTitle: page.data.title,
-        pageUrl: page.url,
-      }}
-      style={{
-        width: '100%',
-        minHeight: '100%',
-      }}
-    />
+    <div style={{ minHeight: '400px' }}>
+      <ReactCusdis
+        lang="zh-cn"
+        attrs={{
+          host,
+          appId,
+          pageId: page.url,
+          pageTitle: page.data.title,
+          pageUrl: page.url,
+        }}
+        style={{
+          display: 'flex',
+          minHeight: '400px',
+        }}
+      />
+      <style jsx>{`
+        :global(#cusdis_thread iframe) {
+          min-height: 400px !important;
+          height: auto !important;
+        }
+      `}</style>
+    </div>
   );
 };
 

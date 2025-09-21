@@ -8,6 +8,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import { BOOK_NAMES } from '@/lib/constants';
 import { AbsoluteString } from 'next/dist/lib/metadata/types/metadata-types';
+import CommentBlock from '@/components/comment';
 
 export default async function Page(props: { params: Promise<{ slug?: string[] }> }) {
   const params = await props.params;
@@ -25,15 +26,20 @@ export default async function Page(props: { params: Promise<{ slug?: string[] }>
       tableOfContent={{
         style: 'clerk',
         footer: (
-          <Link
-            href={`https://github.com/xijinping0/books/blob/main/content/${page.path}`}
-            rel="noreferrer noopener"
-            className="text-sm text-fd-muted-foreground hover:text-fd-accent-foreground transition-colors [overflow-wrap:anywhere]"
-            external
-            target="_blank"
-          >
-            在 GitHub 上编辑此页
-          </Link>
+          <div className="flex flex-col gap-2">
+            <Link
+              href={`https://github.com/xijinping0/books/blob/main/content/${page.path}`}
+              rel="noreferrer noopener"
+              className="text-sm text-fd-muted-foreground hover:text-fd-accent-foreground transition-colors [overflow-wrap:anywhere]"
+              external
+              target="_blank"
+            >
+              在 GitHub 上编辑此页
+            </Link>
+            <div className="mt-10 flex flex-col gap-2">
+              <CommentBlock page={{ url: page.url, data: { title: page.data.title } }} />
+            </div>
+          </div>
         ),
       }}
       full={page.data.full}
