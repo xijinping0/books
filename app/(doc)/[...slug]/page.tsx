@@ -8,6 +8,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import { BOOK_NAMES } from '@/lib/constants';
 import { AbsoluteString } from 'next/dist/lib/metadata/types/metadata-types';
+import CommentBlock from '@/components/comment';
 
 export default async function Page(props: { params: Promise<{ slug?: string[] }> }) {
   const params = await props.params;
@@ -25,15 +26,26 @@ export default async function Page(props: { params: Promise<{ slug?: string[] }>
       tableOfContent={{
         style: 'clerk',
         footer: (
-          <Link
-            href={`https://github.com/xijinping0/books/blob/main/content/${page.path}`}
-            rel="noreferrer noopener"
-            className="text-sm text-fd-muted-foreground hover:text-fd-accent-foreground transition-colors [overflow-wrap:anywhere]"
-            external
-            target="_blank"
-          >
-            在 GitHub 上编辑此页
-          </Link>
+          <div className="flex flex-col gap-2">
+            <Link
+              href={`https://github.com/xijinping0/books/blob/main/content/${page.path}`}
+              rel="noreferrer noopener"
+              className="text-sm text-fd-muted-foreground hover:text-fd-accent-foreground transition-colors [overflow-wrap:anywhere]"
+              external
+              target="_blank"
+            >
+              在 GitHub 上编辑此页
+            </Link>
+            <div className="my-10 flex flex-col gap-2">
+              <h2>
+                <b>评论</b>
+              </h2>
+              {/* Container with proper constraints for ToC placement */}
+              <div className="relative max-w-full overflow-hidden">
+                <CommentBlock page={{ url: page.url, data: { title: page.data.title } }} />
+              </div>
+            </div>
+          </div>
         ),
       }}
       full={page.data.full}
