@@ -36,8 +36,14 @@ export default async function Page(props: { params: Promise<{ slug?: string[] }>
             >
               在 GitHub 上编辑此页
             </Link>
-            <div className="mt-10 flex flex-col gap-2">
-              <CommentBlock page={{ url: page.url, data: { title: page.data.title } }} />
+            <div className="my-10 flex flex-col gap-2">
+              <h2>
+                <b>评论</b>
+              </h2>
+              {/* Container with proper constraints for ToC placement */}
+              <div className="relative max-w-full overflow-hidden">
+                <CommentBlock page={{ url: page.url, data: { title: page.data.title } }} />
+              </div>
             </div>
           </div>
         ),
