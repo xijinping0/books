@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { useDocsSearch } from 'fumadocs-core/search/client';
+import { track } from '@vercel/analytics';
 import {
   SearchDialog,
   SearchDialogClose,
@@ -51,6 +52,22 @@ export default function CustomSearchDialog(props: SharedProps) {
     delayMs: 1000,
     tag,
   });
+
+  // Track search queries with debounce
+  useEffect(() => {
+    if (!search || search.trim().length === 0) {
+      return;
+    }
+
+    const timeoutId = setTimeout(() => {
+      track('search', {
+        query: search,
+        tag: tag || 'all',
+      });
+    }, 1500); // Debounce for 1.5 seconds (slightly longer than search delay)
+
+    return () => clearTimeout(timeoutId);
+  }, [search, tag]);
 
   useEffect(() => {
     setTag(getCurrentTag(pathname));
