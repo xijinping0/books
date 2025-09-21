@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import type { ReactNode } from 'react';
 import CustomSearchDialog from '@/components/search';
 import { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -43,6 +44,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         >
           {children}
         </RootProvider>
+        <Analytics />
       </body>
     </html>
   );
