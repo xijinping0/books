@@ -3,7 +3,7 @@
   "private": true,
   "version": "2.0.0",
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "next dev",
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",

@@ -8,7 +8,6 @@ import React from 'react';
 import { Metadata } from 'next';
 import { BOOK_NAMES } from '@/lib/constants';
 import { AbsoluteString } from 'next/dist/lib/metadata/types/metadata-types';
-import CommentBlock from '@/components/comment';
 
 export default async function Page(props: { params: Promise<{ slug?: string[] }> }) {
   const params = await props.params;
@@ -36,15 +35,15 @@ export default async function Page(props: { params: Promise<{ slug?: string[] }>
             >
               在 GitHub 上编辑此页
             </Link>
-            <div className="my-10 flex flex-col gap-2">
-              <h2>
-                <b>评论</b>
-              </h2>
-              {/* Container with proper constraints for ToC placement */}
-              <div className="relative max-w-full overflow-hidden">
-                <CommentBlock page={{ url: page.url, data: { title: page.data.title } }} />
-              </div>
-            </div>
+            {/*<div className="my-10 flex flex-col gap-2">*/}
+            {/*  <h2>*/}
+            {/*    <b>评论</b>*/}
+            {/*  </h2>*/}
+            {/*  /!* Container with proper constraints for ToC placement *!/*/}
+            {/*  <div className="relative max-w-full overflow-hidden">*/}
+            {/*    <CommentBlock page={{ url: page.url, data: { title: page.data.title } }} />*/}
+            {/*  </div>*/}
+            {/*</div>*/}
           </div>
         ),
       }}
