@@ -1,6 +1,9 @@
 import { MetadataRoute } from 'next';
 import { source } from '@/lib/source';
 
+export const dynamic = 'force-static';
+export const revalidate = false;
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return source.getPages().map((page) => ({
     url: `https://books.xijinping.one${page.url}`,
