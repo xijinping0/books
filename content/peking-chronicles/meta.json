@@ -1,0 +1,6 @@
+{
+  "title": "京华风云录",
+  "description": "京夫子",
+  "root": true,
+  "pages": ["index", "s01", "s02", "s03", "s04"]
+}

@@ -14,11 +14,11 @@ yarn dev
 | `README.md` | 添加新书链接 |
 | `constants.ts` | 注册书名 |
 | `contents/index.md` | 添加新书链接 |
+| `contents/meta.json` | 注册新书目录 |
 | `contents/<book>/index.md{,x}` | 新书首页 |
 | `contents/<book>/meta.json` | 新书名、边栏目录 |
 | `contents/<book>` | 新书内容 |
 | `public/<book>` | 新书图片 |
-| `meta.json` | 注册新书目录 |
 
 ## 手动更新 Orama 索引
 
