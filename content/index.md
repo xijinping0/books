@@ -6,7 +6,7 @@
 | [红太阳是怎样升起的](/red-sun) | 高华 | 毛泽东 |
 | [历史的云雾](/clouds-of-history) | 高华 | |
 | [毛泽东私人医生回忆录](/private-life-of-mao) | 李志绥 | 毛泽东 |
-| [京华风云录](/peking-chronicles) | 京夫子 | |
+| [京华风云录](/peking-chronicles) | 京夫子 | 周恩来、高岗、庐山会议、文革 |
 | [中南海恩仇录](/zhongnanhai) | 京夫子 | 毛泽东、刘少奇、周恩来 |
 | [毛泽东和他的女人们](/mao-and-his-women) | 京夫子 | 毛泽东 |
 | [晚年周恩来](/last-years-of-zhou) | 高文谦 | 周恩来 |
