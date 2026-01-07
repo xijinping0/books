@@ -13,3 +13,4 @@ no-inline-html: false
 no-trailing-punctuation: false
 ol-prefix: false
 no-trailing-spaces: true
+table-column-style: false
