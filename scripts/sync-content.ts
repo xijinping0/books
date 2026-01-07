@@ -18,7 +18,7 @@ async function main() {
 
   const apiKey = process.env.ORAMA_PRIVATE_API_KEY;
   if (apiKey == null) {
-    console.warn('No api key for Orama found, skipping');
+    console.warn('No API key for Orama found, skipping');
     return;
   }
   const index = process.env.ORAMA_PRIVATE_INDEX;
