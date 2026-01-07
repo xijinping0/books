@@ -9,6 +9,7 @@ title: 书目
 | [历史的云雾](/clouds-of-history) | 高华 | |
 | [毛泽东私人医生回忆录](/private-life-of-mao) | 李志绥 | 毛泽东 |
 | [毛泽东和他的女人们](/mao-and-his-women) | 京夫子 | 毛泽东 |
+| [中南海恩仇录](/zhongnanhai) | 京夫子 | 毛泽东、刘少奇、周恩来 |
 | [晚年周恩来](/last-years-of-zhou) | 高文谦 | 周恩来 |
 | [夹边沟记事](/jiabiangou) | 杨显惠 | |
 | [中国底层访谈录](/corpse-walker) | 廖亦武 | |
