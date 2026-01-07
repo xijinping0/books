@@ -12,7 +12,7 @@ yarn dev
 | 文件 | 说明 |
 | --- | --- |
 | `README.md` | 添加新书链接 |
-| `lib/utils.ts` | 注册书名 |
+| `constants.ts` | 注册书名 |
 | `contents/index.md` | 添加新书链接 |
 | `contents/<book>/index.md{,x}` | 新书首页 |
 | `contents/<book>/meta.json` | 新书名、边栏目录 |
