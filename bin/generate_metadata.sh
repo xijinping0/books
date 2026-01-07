@@ -14,7 +14,7 @@ echo "{" > $OUTPUT
 
 for FILE in "$DIR"/*.md; do
   BASENAME=$(basename "$FILE" .md)
-  TITLE=$(grep -m 1 '# ' "$FILE" | sed 's/^# //')
+  TITLE=$(grep -m 1 'title: ' "$FILE" | sed 's/^title: //; s/[[:space:]]*$//')
   echo "  \"$BASENAME\": \"$TITLE\"," >> $OUTPUT
 done
 

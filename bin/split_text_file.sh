@@ -25,7 +25,7 @@ while IFS= read -r line; do
     fi
     file_count=$((file_count + 1))
     current_file="${output_dir}/ch$(printf "%02d" $file_count).md"
-    buffer="# $line"
+    buffer="---\ntitle: $line\n---\n\n"
   else
     buffer="${buffer}\n${line}"
   fi

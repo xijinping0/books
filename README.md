@@ -9,6 +9,7 @@
 | [历史的云雾](https://books.xijinping.one/clouds-of-history) | 高华 | |
 | [毛泽东私人医生回忆录](https://books.xijinping.one/private-life-of-mao) | 李志绥 | 毛泽东 |
 | [毛泽东和他的女人们](https://books.xijinping.one/mao-and-his-women) | 京夫子 | 毛泽东 |
+| [中南海恩仇录](https://books.xijinping.one/zhongnanhai) | 京夫子 | 毛泽东、刘少奇、周恩来 |
 | [晚年周恩来](https://books.xijinping.one/last-years-of-zhou) | 高文谦 | 周恩来 |
 | [夹边沟记事](https://books.xijinping.one/jiabiangou) | 杨显惠 | |
 | [中国底层访谈录](https://books.xijinping.one/corpse-walker) | 廖亦武 | |
