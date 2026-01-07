@@ -1,0 +1,6 @@
+{
+  "title": "中南海恩仇录",
+  "description": "京夫子 著",
+  "root": true,
+  "pages": ["index", "...", "epilogue"]
+}
